@@ -5,11 +5,3 @@ export default function getResponseFromAPI() {
     reject(new Error('Failed to fetch from API'));
   });
 }
-
-// getResponseFromAPI()
-//   .then((data) => {
-//     // console.log('Succesful ', data);
-//   })
-//   .catch((error) => {
-//     // console.log('Error in fetching data', error.message);
-//   });
