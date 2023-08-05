@@ -5,4 +5,4 @@ const students = getListStudents();
 
 console.log(getStudentsByLocation(students, 'San Francisco'));
 console.log(getStudentsByLocation(students, 'Columbia'));
-console.log(getStudentsByLocation(students, 'San ncisco'));
+console.log(getStudentsByLocation(students, ''));

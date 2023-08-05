@@ -1,0 +1,1 @@
+This folder is based on ES6 classes
