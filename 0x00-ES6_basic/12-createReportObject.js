@@ -2,10 +2,10 @@
 export default function createReportObject(employeesList) {
   return {
     allEmployees: employeesList,
-    getNumberOfDepartments(employesList) {
+    getNumberOfDepartments(employeesList) {
       let count = 0;
       // eslint-disable-next-line guard-for-in
-      for (const value in employesList) {
+      for (const value in employeesList) {
         // console.log(value);
         count += 1;
       }
