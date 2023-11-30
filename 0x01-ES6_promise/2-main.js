@@ -1,7 +1,7 @@
 import handleResponseFromAPI from './2-then';
 
 const promise = Promise.resolve();
-const promise = Promise.reject();
+const reject = Promise.reject();
 
 handleResponseFromAPI(promise);
-// handleResponseFromAPI(pro);
+handleResponseFromAPI(reject);
