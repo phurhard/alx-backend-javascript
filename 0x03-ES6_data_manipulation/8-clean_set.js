@@ -1,11 +1,14 @@
 /* eslint-disable no-unused-vars */
 export default function cleanSet(set, startString) {
-  const { length } = startString;
-  const Str = [];
-  const str = set.forEach((value) => {
-    if (value.startsWith(startString)) {
-      if (length !== 0) Str.push(`${value.slice(length)}`);
+  const newArr = [];
+  const arr = Array.from(set);
+  if (typeof startString !== 'string') {
+    return '';
+  }
+  const str = arr.forEach((value) => {
+    if (value) {
+      if (startString.length !== 0) newArr.push(`${value.slice(startString.length)}`);
     }
   });
-  return Str.join('-');
+  return newArr.join('-');
 }
